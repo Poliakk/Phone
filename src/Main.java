@@ -11,11 +11,7 @@
 public class Main {
     public static void main(String[] args) {
         Phone tel1 = new Phone();
-        tel1.setNumber("+7(910)555-44-33"); //private number только через сеттер, package-private setNumber
-        /*лучше сеттеры? в них м.впихнуть проверки данных
-        tel1.model = "Honor";               //package-private model
-        tel1.weight = 320;                  //protected weight
-         */
+        tel1.setNumber("+7(910)555-44-33");
         tel1.setModel("Honor");
         tel1.setWeight(320);
         tel1.info();
@@ -27,15 +23,8 @@ public class Main {
         Phone tel3 = new Phone("+7(950)333-11-77", "Nokia", 250);
         tel3.info();
 
-        /* длинно
-        tel1.receiveCall_0("Alex");
-        System.out.println(tel1.getNumber());
-        //через number
-        tel1.receiveCall_1("Alex");
-         */
         tel1.receiveCall("Alex");
         tel2.receiveCall("Nick");
-        tel3.receiveCall("Kate", tel3.getNumber()); //private number
-        //System.out.println(tel3.getNumber());
+        tel3.receiveCall("Kate");
     }
 }
