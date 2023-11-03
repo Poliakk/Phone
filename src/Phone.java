@@ -18,7 +18,7 @@ public abstract class Phone implements Callable, Informable {
     }
 
     public void receiveCall(String callersName) {
-        System.out.println("\nCall from " + callersName + "\n" + getNumber());
+        System.out.println("\nCall from " + callersName);
     }
 
     public String getNumber() {

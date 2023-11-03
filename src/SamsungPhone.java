@@ -4,7 +4,7 @@ public class SamsungPhone extends Phone implements Callable, Informable {
     }
 
     public void info() {
-        System.out.printf("Phone number: %s\n model: samsung %s\t\tweight: %dг\n",
+        System.out.printf("Phone number: %s\nmodel: samsung %s\tweight: %dг\n",
                 getNumber(), getModel(), getWeight());
     }
 }

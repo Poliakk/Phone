@@ -4,7 +4,7 @@ public class XiaomiPhone extends Phone implements Callable, Informable {
     }
 
     public void info() {
-        System.out.printf("Phone number: %s\n model: xiaomi %s\t\tweight: %dг\n",
+        System.out.printf("Phone number: %s\nmodel: xiaomi %s\tweight: %dг\n",
                 getNumber(), getModel(), getWeight());
     }
 }
