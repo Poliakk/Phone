@@ -1,4 +1,4 @@
-public class XiaomiPhone extends Phone implements Callable, Informable {
+public class XiaomiPhone extends Phone {
     public XiaomiPhone(String number, String model, int weight) {
         super(number, model, weight);
     }

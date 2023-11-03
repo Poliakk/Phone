@@ -1,4 +1,4 @@
-public class SamsungPhone extends Phone implements Callable, Informable {
+public class SamsungPhone extends Phone {
     public SamsungPhone(String number, String model, int weight) {
         super(number, model, weight);
     }

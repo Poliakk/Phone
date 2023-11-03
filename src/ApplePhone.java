@@ -1,4 +1,4 @@
-public class ApplePhone extends Phone implements Callable, Informable {
+public class ApplePhone extends Phone {
     public ApplePhone(String number, String model, int weight) {
         super(number, model, weight);
     }
