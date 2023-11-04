@@ -1,17 +1,17 @@
-public abstract class Phone implements Callable, Informable {
-    private String number;
+public abstract class Phone<D> implements Callable<String>, Informable<D> {
+    private D number;
     private String model;
     private int weight;
 
     public Phone() {
     }
 
-    public Phone(String number, String model) {
+    public Phone(D number, String model) {
         this.number = number;
         this.model = model;
     }
 
-    public Phone(String number, String model, int weight) {
+    public Phone(D number, String model, int weight) {
         this.number = number;
         this.model = model;
         this.weight = weight;
@@ -21,11 +21,11 @@ public abstract class Phone implements Callable, Informable {
         System.out.println("\nCall from " + callersName);
     }
 
-    public String getNumber() {
+    public D getNumber() {
         return number;
     }
 
-    void setNumber(String number) {
+    void setNumber(D number) {
         this.number = number;
     }
 

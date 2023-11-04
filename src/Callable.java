@@ -1,3 +1,3 @@
-public interface Callable {
-    void receiveCall(String callersName);
+public interface Callable<T> {
+    void receiveCall(T callersName);
 }

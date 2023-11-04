@@ -1,12 +1,11 @@
-/* DZ7_lesson8
- создать в проекте с Phone интерфейсы: Callable с методом receiveCall()
- и Informable c default методом info() с default реализацией,
+/* DZ8_lesson9
+ Изменить в проекте с Phone интерфейсы Callable и Informable на использование generic,
  применить интерфейсы к абстрактному классу Phone и классам-наследникам.
  */
 
 public class Main {
     public static void main(String[] args) {
-        Phone tel1 = new SamsungPhone("+7(910)555-44-33", "S23", 168);
+        Phone tel1 = new SamsungPhone(89505554433L, "S23", 168);
         tel1.receiveCall("Alex");
         tel1.info();
 

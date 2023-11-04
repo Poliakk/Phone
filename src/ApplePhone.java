@@ -4,7 +4,7 @@ public class ApplePhone extends Phone {
     }
 
     public void info() {
-        System.out.printf("Phone number: %s\nmodel: IPhone %s\tweight: %dг\n",
+        System.out.printf("Phone number: %s\nmodel: iPhone %s\tweight: %dг\n",
                 getNumber(), getModel(), getWeight());
     }
 }
