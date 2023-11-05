@@ -1,11 +1,11 @@
-public class SamsungPhone extends Phone {
+public class SamsungPhone extends Phone<Long> {
     public SamsungPhone(Long number, String model, int weight) {
         super(number, model, weight);
     }
 
     public void info() {
         String n1, n2, n3, n4;
-        String nn = Long.toString((Long) getNumber());
+        String nn = Long.toString(this.getNumber());
         if (nn.startsWith("8")) {
             n1 = nn.substring(1, 4);
             n2 = nn.substring(4, 7);
@@ -14,6 +14,6 @@ public class SamsungPhone extends Phone {
             nn = "+7(" + n1 + ")" + n2 + "-" + n3 + "-" + n4;
         }
         System.out.printf("Phone number: %s\nmodel: samsung %s\tweight: %dг\n",
-                nn, getModel(), getWeight());
+                nn, this.getModel(), this.getWeight());
     }
 }

@@ -1,10 +1,10 @@
-public class ApplePhone extends Phone {
+public class ApplePhone extends Phone<String> {
     public ApplePhone(String number, String model, int weight) {
         super(number, model, weight);
     }
 
     public void info() {
         System.out.printf("Phone number: %s\nmodel: iPhone %s\tweight: %dг\n",
-                getNumber(), getModel(), getWeight());
+                this.getNumber(), this.getModel(), this.getWeight());
     }
 }
