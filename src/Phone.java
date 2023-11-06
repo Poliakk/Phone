@@ -17,8 +17,10 @@ public abstract class Phone<D> implements Callable<String>, Informable<D> {
         this.weight = weight;
     }
 
-    public void receiveCall(String callersName) {
-        System.out.println("\nCall from " + callersName);
+    public void receiveCall(String callersName) throws NameException {
+        if (callersName.length() < 4)
+            throw new NameException("ОШИБКА!\nДлина имени должна быть минимум 4 знака.", callersName);
+        System.out.println("Call from " + callersName);
     }
 
     public D getNumber() {

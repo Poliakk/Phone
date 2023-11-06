@@ -4,7 +4,7 @@ public class ApplePhone extends Phone<String> {
     }
 
     public void info() {
-        System.out.printf("Phone number: %s\nmodel: iPhone %s\tweight: %dг\n",
+        System.out.printf("Phone number: %s\nmodel: iPhone %s\tweight: %dг\n\n",
                 this.getNumber(), this.getModel(), this.getWeight());
     }
 }

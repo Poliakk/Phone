@@ -13,7 +13,7 @@ public class SamsungPhone extends Phone<Long> {
             n4 = nn.substring(9, 11);
             nn = "+7(" + n1 + ")" + n2 + "-" + n3 + "-" + n4;
         }
-        System.out.printf("Phone number: %s\nmodel: samsung %s\tweight: %dг\n",
+        System.out.printf("Phone number: %s\nmodel: samsung %s\tweight: %dг\n\n",
                 nn, this.getModel(), this.getWeight());
     }
 }

@@ -4,7 +4,7 @@ public class XiaomiPhone extends Phone<String> {
     }
 
     public void info() {
-        System.out.printf("Phone number: %s\nmodel: xiaomi %s\tweight: %dг\n",
+        System.out.printf("Phone number: %s\nmodel: xiaomi %s\tweight: %dг\n\n",
                 this.getNumber(), this.getModel(), this.getWeight());
     }
 }
